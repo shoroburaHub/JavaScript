@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<a href="sign_in.html">sign_in</a>
+<div style="text-align: center; margin-top: 10%">
+    <div id="content"></div>
+</div>
+
+<div style="text-align: center; margin-top: 10%">
+    <input id="commodity_name" placeholder="commodity name">
+    <br>
+    <input id="commodity_price" placeholder="commodity price">
+    <br>
+    <input id="commodity_description" placeholder="commodity description">
+    <br>
+    <button id="save_commodity">save commodity</button>
+</div>
+<script>
+
+    $('#content').ready(function () {
+
+        $.ajax({
+            url: 'http://localhost:3000/loadCommodities',
+            type: 'POST',
+            success: function (res) {
+                var context = "";
+
+                $.each(res, function (i, commodity) {
+                    context+=commodity.name+" "+commodity.price+" "+commodity.description+"<br>";
+                });
+                $('#content').append(context);
+                console.log(res);
+            }
+        })
+
+    });
+
+    $('#save_commodity').click(function () {
+        var order = {
+            commodity_name: $('#commodity_name').val(),
+            commodity_price: $('#commodity_price').val(),
+            commodity_description: $('#commodity_description').val()
+        }
+
+        $.ajax({
+            url: 'http://localhost:3000/saveOrder',
+            type: 'POST',
+            contentType: "application/json",
+            data: JSON.stringify(order),
+            success: function (res) {
+
+                $('#content').append(res.name+" "+res.price+" "+res.description+"<br>");
+
+            }
+        });
+    });
+
+</script>
+
+
+</body>
+</html>

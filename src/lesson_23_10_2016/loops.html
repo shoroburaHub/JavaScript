@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loops</title>
+</head>
+<body>
+<script>
+
+    //        var number = parseInt(prompt("enter some number"));
+    //        var string = "";
+    //
+    //        for(var i = 1; i <= number; i++){
+    //            string += i;
+    //        }
+    //        alert(string);
+
+    //        for(var i = 1; i < 5;i++){
+    //            document.write("outer loop for <br>");
+    //            for(var j = 1; j < 5;j++) {
+    //                document.write("inner loop for <br>")
+    //            }
+    //        }
+
+//    document.write("<h1>attention, get the massage</h1>");
+//
+//    for (var i = 1; i <= 10; i++) {
+//        if(i == 5){
+//            document.write("<h3>we get the half of loop</h3>")
+//        }else{
+//            document.write(i+". i am a part of loop <br>");
+//        }
+//        for (var j = 0; j < 2; j++) {
+//            document.write("interrupt the loop <br>")
+//        }
+//    }
+
+//    var number1 = parseInt(prompt("enter first number"));
+//    var number2 = parseInt(prompt("enter second number"));
+//
+//    var sum = 0;
+//
+//    if(number2 > number1){
+//        for(number1; number1 <= number2; number1++){
+//            sum +=number1;
+//        }
+//        alert(sum);
+//    }else{
+//        for(number2; number2 <= number1; number2++){
+//            sum +=number2;
+//        }
+//        alert(sum);
+//    }
+
+//    var number1 = parseInt(prompt("enter first number"));
+//    var number2 = parseInt(prompt("enter second number"));
+//
+//    var sum = "";
+//
+//    if(number2 > number1){
+//        for(number1; number1 <= number2; number1++){
+//            sum +=number1+ " ";
+//        }
+//        alert(sum);
+//    }else{
+//        for(number2; number2 <= number1; number2++){
+//            sum +=number2+ " ";
+//        }
+//        alert(sum);
+//    }
+
+    var userNumber = parseInt(prompt("enter some number"));
+    var userDegree = parseInt(prompt("enter degree of number"));
+
+    var result = 1;
+
+    for(var i = 0; i < userDegree; i++){
+        result *= userNumber;
+    }
+
+    if(userNumber % 2 ==0){
+        alert(Math.abs(result));
+    }else{
+        alert(result);
+    }
+
+</script>
+</body>
+</html>

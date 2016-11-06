@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #block{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+<button id="btn1">click</button>
+<button id="btn2">click 2</button>
+
+<div id="block"></div>
+
+<script>
+
+    function getE(a) {
+        return document.getElementById(a);
+    }
+
+    function getT(a,b) {
+        return document.getElementsByTagName(a)[b];
+    }
+
+    function getC(a) {
+        return document.querySelector(a);
+    }
+
+    getE('btn1').onclick = function () {
+        alert('hello');
+//            this.innerHTML += "this is button";// append text in the end
+        this.innerHTML = "this is button";// rewrite text
+    }
+
+    getE('block').onmouseover = function () {
+        this.style.backgroundColor = 'red';
+    }
+
+
+    getE('block').onmouseout = function () {
+        this.style.backgroundColor = 'green';
+    }
+
+    getE('btn2').addEventListener('click', listener);
+    getE('btn2').addEventListener('mouseover', listener)
+
+
+    function listener() {
+        console.log('ok');
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

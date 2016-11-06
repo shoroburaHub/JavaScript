@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+        #block{
+             width: 200px;
+            height: 200px;
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+<div style="text-align: center; margin-top: 10%">
+    <p>burning in hell</p>
+
+    <div id="block"></div>
+
+
+</div>
+
+<script>
+
+    var firstColor = prompt('enter first color');
+    var secondColor = prompt('enter second color');
+    var thirdColor = prompt('enter third color');
+
+    document.getElementById('block').onmouseover = function () {
+        this.style.backgroundColor = firstColor;
+    };
+
+
+
+</script>
+
+
+</body>
+</html>

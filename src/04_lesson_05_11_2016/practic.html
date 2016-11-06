@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+
+    var trs =  prompt('how many tr you want to add?')
+    var tds =  prompt('how many td you want to add?')
+    var border =  prompt('px of border?')
+    var width = prompt('width of table?')
+    var height = prompt('height of table?');
+    var cellSpacing = prompt("cellSpacing?");
+    var colorOne = prompt("enter first color")
+    var colorSecond = prompt("enter second color")
+
+
+
+
+    var table = document.createElement('table');
+
+    var change = true;
+
+    for(var j= 0 ; j < trs; j ++){
+        var tr = document.createElement('tr');
+        for(var i = 0; i < tds; i++){
+            var td = document.createElement('td');
+            if((i+j)%2 != 0){
+                td.style.backgroundColor = colorOne;
+            }else{
+                td.style.backgroundColor = colorSecond;
+            }
+            tr.appendChild(td);
+        }
+        table.appendChild(tr);
+    }
+
+    table.cellSpacing = cellSpacing;
+
+
+    table.style.border = border+'px solid black';
+    table.style.width = width+"px";
+    table.style.height = height+"px";
+
+
+    document.body.appendChild(table);
+
+</script>
+</body>
+</html>

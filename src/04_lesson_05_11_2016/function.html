@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>function</title>
+</head>
+<body>
+
+<script>
+    //function declararion
+    //    function func() {
+    //        //body function
+    //    };
+
+    // function expersion
+    //    var func = function () {
+    // body function
+    //    };
+
+    //annonimous function
+    //    (function () {
+    //
+    //    }  ()  ); // мгновенный визов функции
+
+    //    function func() {
+    //        alert("function")
+    //    }
+    //    func();
+
+    //    function func(a) {
+    //        alert("hello"+a);
+    //    }
+    //    func(" world");
+    //
+    //    function func() {
+    //        return "func";
+    //    }
+    //
+    //    alert(func());
+
+
+    //    function func(a,b) {
+    //        alert(arguments[0]);
+    //        alert(arguments[1]);
+    //        alert("length of arguments = "+ arguments.length);
+    //    }
+    //
+    //    func(1,2);
+
+
+    //    (function () {
+    //        var number = parseInt(prompt("enter some number"));
+    //        var pow = parseInt(prompt("enter power of number"));
+    //
+    //        var result = 1;
+    //
+    //        for(var i = 0; i < pow; i++){
+    //            result *= number;
+    //        }
+    //
+    //        alert(result);
+    //    }());
+
+//    function recursion(num, pow) {
+//        if (pow != 1) {
+//            return num * recursion(num, pow - 1);
+//        }else{
+//            return num;
+//        }
+//    }
+//
+//    alert(recursion(2,3));
+
+
+    function fib(num) {
+        var res = "1 1 ";
+        if(num == 1){
+            return 1;
+        }else if(num == 2){
+            return "1 1";
+        }else{
+            var previous = 1;
+            var prePrevious = 1;
+            var current = 0;
+            for (var i = 0; i < num; i++){
+                current = previous + prePrevious;
+                previous += previous + prePrevious;
+
+
+
+            }
+        }
+    };
+
+    alert(fib(parseInt(prompt("how many element of fibonacci toy want to show"))));
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+

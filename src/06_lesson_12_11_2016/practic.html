@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input id="btn" name="btn" type="button" value="click"/>
+
+<script>
+
+    var btn = document.getElementById('btn');
+
+    btn.onclick = function () {
+
+        if(btn.getAttribute('type') == 'button'){
+            btn.setAttribute('type', 'checkbox');
+        }
+
+        else {
+            btn.setAttribute('type', 'button');
+        }
+
+    };
+
+
+</script>
+</body>
+</html>

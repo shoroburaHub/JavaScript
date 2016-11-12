@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form name="myForm">
+
+    <input type="text" name="login" placeholder="login">
+    <input type="password" name="password" placeholder="password">
+    <br>
+    <br>
+    <label>1c
+        <input type="checkbox" name="check" value="1c">
+    </label>
+    <label>2c
+        <input type="checkbox" name="check" value="2c">
+    </label>
+    <label>3c
+        <input type="checkbox" name="check" value="3c">
+    </label>
+    <br>
+    <label>1r
+        <input type="radio" name="radio" value="1r">
+    </label>
+    <label>2r
+        <input type="radio" name="radio" value="2r">
+    </label>
+    <label>3r
+        <input type="radio" name="radio" value="2r">
+    </label>
+    <br>
+    <select name="myList">
+        <option value="option1">option1</option>
+        <option value="option2">option2</option>
+        <option value="option3">option3</option>
+        <option value="option4">option4</option>
+    </select>
+    <br>
+    <textarea name="myText" cols="30" rows="10"></textarea>
+    <br>
+    <button name="btn">click me</button>
+
+</form>
+
+<script>
+//    var myForm = document.forms[0];
+    myForm = document.forms["myForm"];
+//    myForm = document.forms.myForm;
+    console.log(myForm);
+
+    var login = myForm.elements.login,
+            password = myForm.elements.password,
+            check = myForm.elements.check,
+            radio = myForm.elements.radio,
+            myList = myForm.elements.myList,
+            myText = myForm.elements.myText,
+            btn = myForm.elements.btn;
+
+//    btn.onclick = function () {
+//        alert(login.value);
+//    }
+
+
+
+//    for(var i  = 0; i < check.length; i++){
+//        check[i].onchange = function () {
+//            alert(this.value);
+//        }
+//    }
+
+//    for(var i  = 0; i < radio.length; i++){
+//        radio[i].onchange = function () {
+//            alert(this.value);
+//        }
+//    }
+
+//    myList.onchange = function () {
+//        alert(this.value);
+//          this method up or this method down
+//        for (var i = 0; i < this.options.length; i++) {
+//            var option = this.options[i];
+//
+//            if(option.selected){
+//                alert(option.value);
+//            }
+//
+//        }
+//    }
+
+    btn.onclick = function () {
+        alert(myText.value);
+    }
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

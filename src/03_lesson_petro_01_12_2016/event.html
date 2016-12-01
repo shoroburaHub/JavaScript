@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<form action="#" name="signUp">
+    <div class="form-group">
+        <label>
+            username:
+            <input type="text" name="username" placeholder="username" maxlength="20" required>
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            password
+            <input type="password" name="password" placeholder="password">
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            email
+            <input type="email" name="email" placeholder="email">
+        </label>
+    </div>
+    <div class="form-group">
+        <label>personal information
+            <br>
+            <textarea name="info" cols="50" rows="10"></textarea>
+        </label>
+    </div>
+    <div class="form-group">
+        <button id="signUp" name="send">sign up</button>
+    </div>
+</form>
+
+<div class="profile">
+    <p>username : <span id="username"></span></p>
+    <p>email : <span id="email"></span></p>
+    <p>personal information : <span id="info"></span></p>
+</div>
+<form action="#" name="bg">
+    <div><label><input type="radio" name="radio" value="red">red</label></div>
+    <div><label><input type="radio" name="radio" value="blue">blue</label></div>
+    <div><label><input type="radio" name="radio" value="green">green</label></div>
+    <div><label><input type="radio" name="radio" value="yellow">yellow</label></div>
+    <div><label><input type="radio" name="radio" value="orange">orange</label></div>
+    <div><label><input type="radio" name="radio" value="grey">grey</label></div>
+</form>
+
+<script src="js/main.js"></script>
+</body>
+</html>

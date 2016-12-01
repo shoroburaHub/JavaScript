@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    //    var obj = new Object();
+    //    var obj1 = {};
+
+    var person = {
+        name: 'koko',
+        surname: 'toto',
+        age: 25,
+        "hey": "hello"
+    };
+
+    //    alert(person['hey']);
+    //    alert(person['name']); the same method    ->    alert(person.name)
+
+    //    alert(person);
+
+
+    //    person.hello = function () {
+    //        return "hello " + person.name;// or this.name;
+    //    }
+
+    //    alert(person.hello());
+
+
+    //    delete person.age; // delete some attribute from object
+
+    //    if('name' in person){ // check attribute in object
+    //        alert('yes');
+    //    }
+
+    function User(username, email, password) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
+        this.hello = function () {
+            return "hello my name is "+ this.username;
+        }
+    }
+
+
+    var koko = new User('koko','koko@koko', 'koko');
+
+//    alert(koko.username);
+
+//    alert(koko.hello());
+
+//    for (var key in koko){ // get all attribute from object
+//        alert(key +" -> "+koko[key]);
+//    }
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

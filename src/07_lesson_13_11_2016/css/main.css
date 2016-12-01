@@ -1,0 +1,35 @@
+body{
+    background-color: grey;
+}
+#container{
+    padding: 10px 10px 10px 10px;
+    background-color: aqua;
+    border-radius: 10px;
+    height: 620px;
+}
+
+#header{
+    padding: 10px 10px 10px 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: auto;
+    height: 250px;
+    overflow: scroll;
+}
+#nav{
+    padding: 10px 10px 10px 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: auto;
+    margin: 5px 0px 5px 0px;
+    text-align: center;
+}
+#footer{
+    padding: 10px 10px 10px 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: auto;
+    height: 250px;
+    margin: 5px 0px 5px 0px;
+    overflow: scroll;
+}

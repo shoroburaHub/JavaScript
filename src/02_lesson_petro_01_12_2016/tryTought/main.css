@@ -1,0 +1,19 @@
+body{
+    position: absolute;
+}
+.point{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: red;
+    border-radius: 10px;
+    margin: 650px 0px 0px 250px;
+}
+.player{
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    height: 20px;
+    background: #0005ff;
+    margin: 0px 0px 0px 200px;
+}
